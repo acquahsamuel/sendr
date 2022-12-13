@@ -1,0 +1,74 @@
+// Color-pallete
+$color-black: #270404;
+$color-white: #fff;
+
+
+.wrapper {
+    background-color: #f2f6f6;
+    width: 60rem;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+// .main-heading {
+//     display: flex;
+//     justify-content: center;
+//     padding: 4em 0;
+//     text-align: center;
+// }
+
+.social {
+    .social-link {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        box-sizing: border-box;
+    }
+
+    li {
+        list-style: none;
+        text-decoration: none;
+        color: dodgerblue;
+    }
+}
+
+@media (max-width: 922px) {
+    .wrapper {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .section-col {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+
+        .right-content {
+            width: 100%;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #040303;
+}
+
+
+
