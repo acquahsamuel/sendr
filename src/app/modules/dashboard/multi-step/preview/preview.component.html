@@ -1,26 +1,98 @@
 <div class="page-wrapper">
-    <div class="form-group-c">
-        <h3>  You're almost ready  </h3>
-        <span> Review your broadcast before sending </span>
+  <div class="form-group-c">
+    <h3> You're almost ready </h3>
+    <span> Review your broadcast before sending </span>
+
+
+    <div class="form-group">
+      <h5> Recipients </h5>
+      <div class="form-col">
+        <span> All Subscribers (10,3923) </span>
+        <button class="btn btn-light"> Edit </button>
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <h5> Sender </h5>
+      <div class="form-col">
+        <span> Samuel Stephen (hellosbincubate@gmail.com) </span>
+        <button class="btn btn-light"> Edit </button>
+      </div>
+    </div>
 
 
 
+    <div class="form-group">
+      <h5> Subject </h5>
+      <div class="form-col">
+        <span> The Account is activated </span>
+        <button class="btn btn-light"> Edit </button>
+      </div>
+    </div>
 
-        <div class="form-group">
-            <h5> Recipients  </h5>
+
+    <div class="form-group">
+      <h5> Preview </h5>
+      <div class="form-col">
+        <span> Simple and power email marketing tool </span>
+        <button class="btn btn-light"> Edit </button>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <h5> Content </h5>
+      <div class="form-col">
+        <button class="btn btn-light"> Send Test </button>
+        <button class="btn btn-light"> Preview </button>
+      </div>
+
+      <ng-container>
+
+      </ng-container>
+
+    </div>
+
+
+    <div class="form-group">
+      <h5> Delivery </h5>
+      <span> Send now or schudule in the future </span>
+
+      <div class="">
+        <section class="example-section">
+          <input type="radio" name="styles" id="default">
+          <label for="default"> Send now </label>
+        </section>
+
+        <section class="example-section">
+          <input type="radio" name="styles" id="default" checked>
+          <label for="default"> Send later </label>
+        </section>
+
+        <div class="send-later">
+          <div class="form-group">
+            <label for=""> Sender </label>
             <div class="form-col">
-                <span> All Subscribers (10,3923) </span>
-                <button class="btn btn-light"> Edit </button>
+              <input class="form-input" type="email" required name="email" placeholder="username@gmail.com"
+                formControlName="email" />
+              <input class="form-input" type="email" required name="email" placeholder="username@gmail.com"
+                formControlName="email" />
             </div>
-    
-    
+            <span class="tag-info">
+              Emails will be sent from a unique Lemon Squeezy store address. <br>
+              Replies will be sent to the email address you provide
+            </span>
+          </div>
         </div>
-
-
+      </div>
     </div>
 
 
 
 
+    <button type="submit" class="btn btn-dark"> Schudule Broadcast </button>
+
+
+  </div>
 
 </div>

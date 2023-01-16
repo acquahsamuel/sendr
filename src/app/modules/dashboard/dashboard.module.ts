@@ -6,7 +6,7 @@ import { SettingsComponent } from './multi-step/settings/settings.component';
 import { ContentComponent } from './multi-step/content/content.component';
 import { PreviewComponent } from './multi-step/preview/preview.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+// import { MaterialModule } from 'src/app/material.module';
 
 @NgModule({
   declarations: [

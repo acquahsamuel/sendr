@@ -1,0 +1,31 @@
+<section class="example-container">
+    <!-- <header>
+      <h2> {{ selectedIndex + 1 }}/{{ steps.length }}</h2>
+    </header> -->
+    <section class="main-content">
+      <section class="navigation">
+        <ng-container *ngFor="let flow of flows; let i = index">
+          <div [routerLink]="flow.route" matRipple class="step-element" (click)="selectStepByIndex(i)">
+            <span>
+              <h5 class="main-heading" (click)="selectStepByIndex(i)"> {{ flow.stage }} </h5>
+            </span>
+            <mat-radio-button [checked]="currentRoute === flow.route" name="choice"></mat-radio-button>
+          </div>
+  
+        </ng-container>
+  
+      </section>
+  
+      <section class="ml-4 mt-8">
+        <!-- <section [ngTemplateOutlet]="selected ? selected.content : null"></section> -->
+        <router-outlet></router-outlet>
+  
+      </section>
+  
+    </section>
+  </section>
+  
+  <!-- Copyright 2022 Google LLC. All Rights Reserved.
+      Use of this source code is governed by an MIT-style license that
+      can be found in the LICENSE file at https://angular.io/license -->
+  

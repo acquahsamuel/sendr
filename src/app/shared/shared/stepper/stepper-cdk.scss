@@ -1,0 +1,147 @@
+.main {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .main-content {
+    height: calc(100vh - 160px);
+    width: 95rem;
+    margin: 0 auto;
+    overflow: auto;
+    // padding: 0rem 2rem;
+  }
+  
+  .main-stepper {
+    border-right: 1px solid rgb(227, 224, 224);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  .example-container {
+    // background: rgb(226, 220, 219);
+    width: 100%;
+  }
+  
+  .main-content {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    // width: 100%;
+    // background-color: tomato;
+  }
+  
+  .main-content section:first-child {
+    width: 400px;
+    // background-color: rgb(252, 249, 249);
+    padding: 1.5rem;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+  
+    top: 0px;
+    bottom: auto;
+  }
+  
+  .main-content section:last-child {
+    width: calc(100vw - 400px);
+    // background-color: rgb(239, 240, 238);
+  }
+  
+  .example-step {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .main-heading {
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+  
+  .btn {
+    outline: none;
+    padding: 0.8rem 3.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+  
+    &.btn-default {
+      background-color: dodgerblue;
+    }
+  
+    &.btn-blue {
+      background-color: rgb(253, 254, 255);
+      color: black;
+    }
+  }
+  
+  .example-step-navigation-bar {
+    display: flex;
+    justify-content: space-around;
+    // justify-content: ;
+  }
+  
+  .navigation {
+    box-sizing: border-box;
+    overflow: scroll;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+  
+  .step-element {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  .step-element:hover {
+    background-color: #0088ff20;
+  }
+  
+  .step-element h5 {
+    margin: 0;
+  }
+  
+  .highlightedCircle {
+    background-color: #2996d6 !important;
+    width: 10px !important;
+    height: 10px !important;
+    margin-right: 10px !important;
+    border-radius: 5px !important;
+    border: 0px !important;
+  }
+  
+  .unhighlightedCircle {
+    background-color: transparent;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #797979;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+  
