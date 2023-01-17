@@ -1,4 +1,5 @@
 import { Component, OnInit  } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 
@@ -10,9 +11,29 @@ import { Component, OnInit  } from '@angular/core';
 })
 export class MultiStepComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public router : Router,
+    private activatedRoute : ActivatedRoute
+
+    ) { }
 
   ngOnInit(): void {
+
+
   }
+
+
+
+  next(){
+  
+  
+  }
+
+
+  previous(){
+  
+  }
+
+
 
 }

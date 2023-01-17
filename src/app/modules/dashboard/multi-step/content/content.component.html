@@ -3,32 +3,43 @@
     <h3> All Recipients </h3>
     <span></span>
     <div class="content-width">
-     
-      <editor apiKey="96v08iycybbz8rffjogkkarvz1pkcf7s6skp266n2taioplo" class="editor-cls" name="description" #editor [init]="{
+
+      <editor apiKey="96v08iycybbz8rffjogkkarvz1pkcf7s6skp266n2taioplo" class="editor-cls" name="description" #editor
+        [init]="{
               height: 300,
-              width: '100%',
               menubar: false,
+              inline : true,
+            
+              width: '100%',
               skin : 'oxide-dark',
               icons : 'thin',
-              inline : true,
-              toolbar: false,
               placeholder: 'Email Subject..',
-              content_style: 'body { font-size: 14pt; }',
-              plugins: ['autoresize quickbars emoticons image media table hr paste']
+              content_style: 'h3 { font-size: 14pt; font-family : inherit }',
+              content_css : 'dark',
+              toolbar: 'bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment'
+          
             }"></editor>
 
-            <editor apiKey="96v08iycybbz8rffjogkkarvz1pkcf7s6skp266n2taioplo" name="description" #editor [init]="{
-              plugins: 'autoresize quickbars image media table hr paste',
-              skin: 'snow',
+    </div>
+
+
+
+    <div class="content-width">
+      <editor apiKey="96v08iycybbz8rffjogkkarvz1pkcf7s6skp266n2taioplo" name="description" #editor [init]="{
+              skin: 'oxide-dark',
               icons: 'thin',
               menubar: false,
-              toolbar: false,
               inline : true,
               placeholder: 'Email body....',
-              quickbars_selection_toolbar: 'bold italic link | h1 h2 h3 | blockquote',
-              quickbars_insert_toolbar: 'image media table hr'
+              toolbar: 'bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment'
             }"></editor>
     </div>
+
+
+
+    <br>
+    <button type="submit" class="btn btn-dark"> Next </button>
+  
   </div>
 </div>
 
