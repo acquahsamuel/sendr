@@ -1,6 +1,37 @@
-<p>content works!</p>
+<div class="page-wrapper">
+  <div class="form-group-c">
+    <h3> All Recipients </h3>
+    <span></span>
+    <div class="content-width">
+     
+      <editor apiKey="96v08iycybbz8rffjogkkarvz1pkcf7s6skp266n2taioplo" class="editor-cls" name="description" #editor [init]="{
+              height: 300,
+              width: '100%',
+              menubar: false,
+              skin : 'oxide-dark',
+              icons : 'thin',
+              inline : true,
+              toolbar: false,
+              placeholder: 'Email Subject..',
+              content_style: 'body { font-size: 14pt; }',
+              plugins: ['autoresize quickbars emoticons image media table hr paste']
+            }"></editor>
 
+            <editor apiKey="96v08iycybbz8rffjogkkarvz1pkcf7s6skp266n2taioplo" name="description" #editor [init]="{
+              plugins: 'autoresize quickbars image media table hr paste',
+              skin: 'snow',
+              icons: 'thin',
+              menubar: false,
+              toolbar: false,
+              inline : true,
+              placeholder: 'Email body....',
+              quickbars_selection_toolbar: 'bold italic link | h1 h2 h3 | blockquote',
+              quickbars_insert_toolbar: 'image media table hr'
+            }"></editor>
+    </div>
+  </div>
+</div>
 
-
-
-
+<!-- <medium-editor [(editorModel)]="textVar"
+[editorOptions]="{'toolbar': {'buttons': ['bold', 'italic', 'underline', 'h1', 'h2', 'h3']}}" 
+[editorPlaceholder]="placeholderVar"></medium-editor> -->
