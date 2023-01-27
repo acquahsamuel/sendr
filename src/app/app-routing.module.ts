@@ -4,20 +4,25 @@ import { MultiStepComponent } from './modules/dashboard/multi-step/multi-step.co
 
 const routes: Routes = [
   {
-    path: 'dashboard',
+    path: '',
     component: MultiStepComponent,
-    children: [ 
+    children: [
       {
-        path: '',
+        path: 'dashboard',
         loadChildren: () =>
           import('./modules/dashboard/dashboard.module').then(
             (m) => m.DashboardModule
           ),
       },
+      // {
+      //   path : '',
+      //   loadChildren: () =>
+      //     import('./modules/auth/user-auth.module').then(
+      //       (m) => m.UserAuthModule
+      //     ),
+      // }
     ],
   },
-
-  // { path: '**', redirectTo: '/login', pathMatch: 'full' },
 ];
 
 @NgModule({

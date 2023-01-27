@@ -111,5 +111,8 @@
       }
     }
   },
-  "defaultProject": "sendr"
+  "defaultProject": "sendr",
+  "cli": {
+    "analytics": "dfc3e4fe-b1d4-467e-b86d-6b49a2b2bc22"
+  }
 }
