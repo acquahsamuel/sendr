@@ -14,13 +14,6 @@ const routes: Routes = [
             (m) => m.DashboardModule
           ),
       },
-      // {
-      //   path : '',
-      //   loadChildren: () =>
-      //     import('./modules/auth/user-auth.module').then(
-      //       (m) => m.UserAuthModule
-      //     ),
-      // }
     ],
   },
 ];

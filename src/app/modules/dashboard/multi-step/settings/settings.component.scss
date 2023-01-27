@@ -19,7 +19,7 @@
 }
 
 .form-group-c {
-    width: 45%;
+    // width: 45%;
     // border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -163,14 +163,10 @@ mat-spinner {
 
 @media screen and (max-width: 500px) {
     .form {
-        width: 17rem;
-        padding: 2rem;
+        // width: 17rem;
+        // padding: 2rem;
+        border: 1px solid black;
     }
 }
 
-// .form-group{
-//     display: flex;
-//     flex-direction: column;
-//     width: 70%;
-//     justify-content: center;
-// }
+
