@@ -1,6 +1,6 @@
 <div class="signup-container">
    
-    <div class="form"  (ngSubmit)="logInSubmit()">
+    <div class="form">
       <h3>Login</h3>
       <div class="btn-group">
         <button class="btn btn-default">Login up with Google</button>
@@ -69,13 +69,13 @@
         *ngIf="isLoading"
       ></mat-spinner> -->
   
-      <button type="submit" class="btn btn-dark" >Login</button>
+      <button type="submit" class="btn btn-dark" (click)="logInSubmit()"> Signup </button>
       <!-- <button class="btn btn-dark" *ngIf="!isLoading">Login</button> -->
   
       <hr class="border-line" />
       <div class="btn-cta">
-        <span>Don't have an account</span>
-        <a routerLink="/signup">Signup</a>
+        <span> Already have an account </span>
+        <a routerLink="/login">Login</a>
       </div>
       <div class="btn-cta">
         <span>Forgot password</span>

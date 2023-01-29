@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+// import { NotFoundPageComponent } from './shared/components/not-found-page/not-found-page.component';
 
 const routes: Routes = [
   {
@@ -13,8 +14,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./modules/dashboard/dashboard.module').then(
         (m) => m.DashboardModule),
-  }
-
+  }, 
+  // {
+  //   path: '**',
+  //   component: NotFoundPageComponent
+  // }
 ];
 
 @NgModule({

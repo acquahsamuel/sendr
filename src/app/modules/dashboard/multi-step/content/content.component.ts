@@ -9,12 +9,17 @@ import { AfterViewInit, Component, OnInit ,ViewChild , ElementRef } from '@angul
 // declare var MediumEditor:any;
 
 export class ContentComponent implements OnInit {
-
+  ondelay = false;
   
 
   constructor() { }
 
   ngOnInit(): void {
+
+    setTimeout(() => {
+      this.ondelay = true;
+    }, 5000);
+
   }
 
 

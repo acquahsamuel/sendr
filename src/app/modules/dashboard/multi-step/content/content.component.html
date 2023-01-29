@@ -1,15 +1,14 @@
 <div class="page-wrapper">
-  <div class="form-group-c">
+  <div class="form-group-c" *ngIf="ondelay; else loading">
     <h3> All Recipients </h3>
     <span></span>
-    <div class="content-width">
+   
 
       <editor apiKey="96v08iycybbz8rffjogkkarvz1pkcf7s6skp266n2taioplo" class="editor-cls" name="description" #editor
         [init]="{
               height: 300,
               menubar: false,
               inline : true,
-            
               width: '100%',
               skin : 'oxide-dark',
               icons : 'thin',
@@ -20,20 +19,20 @@
           
             }"></editor>
 
-    </div>
+    
 
 
 
-    <div class="content-width">
+  
       <editor apiKey="96v08iycybbz8rffjogkkarvz1pkcf7s6skp266n2taioplo" name="description" #editor [init]="{
               skin: 'oxide-dark',
               icons: 'thin',
               menubar: false,
-              inline : true,
+              inline : false,
               placeholder: 'Email body....',
               toolbar: 'bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment'
             }"></editor>
-    </div>
+    
 
 
 
@@ -41,8 +40,12 @@
     <button type="submit" class="btn btn-dark"> Next </button>
   
   </div>
-</div>
 
 <!-- <medium-editor [(editorModel)]="textVar"
 [editorOptions]="{'toolbar': {'buttons': ['bold', 'italic', 'underline', 'h1', 'h2', 'h3']}}" 
 [editorPlaceholder]="placeholderVar"></medium-editor> -->
+
+
+<ng-template #loading>
+     <app-loader></app-loader>
+</ng-template>

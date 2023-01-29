@@ -7,6 +7,7 @@ import { ContentComponent } from './multi-step/content/content.component';
 import { PreviewComponent } from './multi-step/preview/preview.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditorModule } from '@tinymce/tinymce-angular';
+import { LoaderComponent } from 'src/app/shared/components/loader/loader.component';
 
 
 @NgModule({
@@ -15,7 +16,7 @@ import { EditorModule } from '@tinymce/tinymce-angular';
     SettingsComponent,
     ContentComponent,
     PreviewComponent,
-    
+    LoaderComponent
   ],
   imports: [
     CommonModule,

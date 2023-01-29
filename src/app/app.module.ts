@@ -12,7 +12,7 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
 @NgModule({
   declarations: [
     AppComponent,
-  ],
+    ],
   imports: [
     BrowserModule,
     FormsModule,
