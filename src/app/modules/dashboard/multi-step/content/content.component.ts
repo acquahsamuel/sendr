@@ -12,16 +12,29 @@ export class ContentComponent implements OnInit {
   ondelay = false;
   
 
-  constructor() { }
+  constructor(
+    
+ 
+    
+    ) { }
 
   ngOnInit(): void {
 
     setTimeout(() => {
       this.ondelay = true;
-    }, 5000);
+    }, 1000);
+
+
 
   }
 
+
+  
+  iniiit(){
+  
+  
+    
+  }
 
 
 }

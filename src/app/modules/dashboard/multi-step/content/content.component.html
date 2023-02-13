@@ -1,51 +1,57 @@
 <div class="page-wrapper">
   <div class="form-group-c" *ngIf="ondelay; else loading">
-    <h3> All Recipients </h3>
+    <h3>All Recipients</h3>
     <span></span>
-   
 
-      <editor apiKey="96v08iycybbz8rffjogkkarvz1pkcf7s6skp266n2taioplo" class="editor-cls" name="description" #editor
-        [init]="{
-              height: 300,
-              menubar: false,
-              inline : true,
-              width: '100%',
-              skin : 'oxide-dark',
-              icons : 'thin',
-              placeholder: 'Email Subject..',
-              content_style: 'h3 { font-size: 14pt; font-family : inherit }',
-              content_css : 'dark',
-              toolbar: 'bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment'
-          
-            }"></editor>
+    <editor
+      apiKey="96v08iycybbz8rffjogkkarvz1pkcf7s6skp266n2taioplo"
+      class="editor-body"
+      name="description"
+      #editor
+      [init]="{
+        height: 300,
+        menubar: false,
+        inline: true,
+        branding: false,
+        width: '100%',
+        skin: 'outside',
+        icons: 'thin',
+        placeholder: 'Email Subject..',
+        plugins: 'emoticons hr image link lists charmap table',
+        toolbar:'fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment'
+        
+      }"
+    ></editor>
 
-    
+    <editor
+    apiKey="96v08iycybbz8rffjogkkarvz1pkcf7s6skp266n2taioplo"
+    class="editor-body"
+    name="description"
+    #editor
+    [init]="{
+      height: 300,
+      menubar: false,
+      inline: true,
+      branding: false,
+      width: '100%',
+      skin: 'outside',
+      icons: 'thin',
+      placeholder: 'Email Placeholder..',
+      plugins: 'emoticons hr image link lists charmap table',
+      toolbar:'fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment'
+      
+    }"
+   ></editor>
 
-
-
-  
-      <editor apiKey="96v08iycybbz8rffjogkkarvz1pkcf7s6skp266n2taioplo" name="description" #editor [init]="{
-              skin: 'oxide-dark',
-              icons: 'thin',
-              menubar: false,
-              inline : false,
-              placeholder: 'Email body....',
-              toolbar: 'bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment'
-            }"></editor>
-    
-
-
-
-    <br>
-    <button type="submit" class="btn btn-dark"> Next </button>
-  
+    <br />
+    <button type="submit" class="btn btn-dark">Next</button>
   </div>
 
-<!-- <medium-editor [(editorModel)]="textVar"
+  <!-- <medium-editor [(editorModel)]="textVar"
 [editorOptions]="{'toolbar': {'buttons': ['bold', 'italic', 'underline', 'h1', 'h2', 'h3']}}" 
 [editorPlaceholder]="placeholderVar"></medium-editor> -->
 
-
-<ng-template #loading>
-     <app-loader></app-loader>
-</ng-template>
+  <ng-template #loading>
+    <app-loader></app-loader>
+  </ng-template>
+</div>
